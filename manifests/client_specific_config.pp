@@ -29,6 +29,10 @@
 #   String.  IP configuration to push to the client.
 #   Default: false
 #
+# [*ifconfig_ipv6*]
+#   String.  IPv6 configuration to push to the client.
+#   Default: false
+#
 # [*dhcp_options]
 #   Array.  DHCP options to push to the client.
 #   Default: []
@@ -83,6 +87,7 @@ define openvpn::client_specific_config(
   $iroute_ipv6      = [],
   $route            = [],
   $ifconfig         = false,
+  $ifconfig_ipv6    = false,
   $dhcp_options     = [],
   $redirect_gateway = false,
 ) {
