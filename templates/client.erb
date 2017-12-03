@@ -31,7 +31,7 @@ tls-cipher <%= @tls_cipher %>
 <% if @mute_replay_warnings -%>
 mute-replay-warnings
 <% end -%>
-ns-cert-type server
+remote-cert-tls server
 <% if @sndbuf -%>
 sndbuf <%= @sndbuf %>
 <% end -%>
